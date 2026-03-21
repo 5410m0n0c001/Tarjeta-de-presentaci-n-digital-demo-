@@ -25,6 +25,9 @@
     <!-- Preload Critical Assets -->
     <link rel="preload" href="assets/hero.mp4" as="video" type="video/mp4">
     <link rel="preload" href="assets/icons/call.svg" as="image">
+
+    <!-- Driver.js for Guided Tour -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css"/>
 </head>
 
 <body>
@@ -589,8 +592,10 @@
     <div class="toast-container" aria-live="polite" aria-atomic="true"></div>
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
     <script src="js/sofia-chat.js" defer></script>
     <script src="js/script.js" defer></script>
+    <script src="js/tour.js" defer></script>
 </body>
 
 </html>
