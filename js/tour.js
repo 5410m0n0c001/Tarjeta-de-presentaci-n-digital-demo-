@@ -27,7 +27,7 @@ const startTour = () => {
                 element: '.collapsible-menu-left', 
                 popover: { 
                     title: 'Nuestros Servicios (Our Services)', 
-                    description: 'Navega por todas las opciones de tu sitio web. Aquí tus clientes pueden buscar servicios como Yates, Pesca, Restaurantes y más.', 
+                    description: 'Pulsa este botón para navegar a las diversas secciones del sitio web. En caso de que no cuentes con un sitio, nosotros podemos crearte uno para potencializar tus funnels de conversión.', 
                     side: isMobile ? "bottom" : "right", 
                     align: 'center' 
                 },

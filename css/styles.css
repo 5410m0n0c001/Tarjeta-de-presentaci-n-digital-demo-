@@ -673,23 +673,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .menu-toggle {
-    width: 56px;
-    height: 56px;
+    width: 80px;
+    height: 80px;
   }
 
   .toggle-icon {
-    width: 56px;
-    height: 56px;
+    width: 72px;
+    height: 72px;
   }
   
   .action-btn {
-    min-width: 64px;
-    min-height: 64px;
+    min-width: 88px;
+    min-height: 88px;
   }
   
   .btn-icon {
-    width: 56px;
-    height: 56px;
+    width: 80px;
+    height: 80px;
   }
 
   .menu-content {
@@ -725,23 +725,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .menu-toggle {
-    width: 50px;
-    height: 50px;
+    width: 72px;
+    height: 72px;
   }
 
   .toggle-icon {
-    width: 50px;
-    height: 50px;
+    width: 64px;
+    height: 64px;
   }
   
   .action-btn {
-    min-width: 60px;
-    min-height: 60px;
+    min-width: 80px;
+    min-height: 80px;
   }
   
   .btn-icon {
-    width: 52px;
-    height: 52px;
+    width: 72px;
+    height: 72px;
   }
 
   .menu-content {
@@ -792,23 +792,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .menu-toggle {
-    width: 44px;
-    height: 44px;
+    width: 64px;
+    height: 64px;
   }
 
   .toggle-icon {
-    width: 44px;
-    height: 44px;
+    width: 56px;
+    height: 56px;
   }
   
   .action-btn {
-    min-width: 56px;
-    min-height: 56px;
+    min-width: 72px;
+    min-height: 72px;
   }
   
   .btn-icon {
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
   }
 
   .menu-content {
