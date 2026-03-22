@@ -291,6 +291,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Language Toggle */
+@keyframes pulseBright {
+  0% {
+    box-shadow: 0 0 0 0 rgba(196, 154, 58, 0.8);
+    background: rgba(196, 154, 58, 0.9);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(196, 154, 58, 0);
+    background: rgba(196, 154, 58, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(196, 154, 58, 0);
+    background: rgba(196, 154, 58, 0.9);
+  }
+}
+
 .lang-toggle {
   position: fixed;
   top: 20px;
@@ -298,9 +313,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: var(--text-primary);
+  background: var(--accent);
+  border: 2px solid var(--accent-light);
+  color: var(--bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -310,14 +325,42 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-backdrop-filter: blur(10px);
   transition: var(--transition);
   font-family: var(--font-primary);
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  animation: pulseBright 2s infinite;
 }
+
 .lang-toggle:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(196, 154, 58, 0.2);
+  transform: translateY(-2px) scale(1.1);
+}
+
+.lang-toggle::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 12px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: var(--text-primary);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  transform: translateY(-10px);
+}
+
+.lang-toggle:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 /* Action Buttons */
@@ -764,13 +807,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .action-btn {
-    min-width: 88px;
-    min-height: 88px;
+    min-width: 140px;
+    min-height: 140px;
   }
   
   .btn-icon {
-    width: 80px;
-    height: 80px;
+    width: 130px;
+    height: 130px;
   }
 
   .menu-content {
@@ -816,13 +859,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .action-btn {
-    min-width: 80px;
-    min-height: 80px;
+    min-width: 120px;
+    min-height: 120px;
   }
   
   .btn-icon {
-    width: 72px;
-    height: 72px;
+    width: 110px;
+    height: 110px;
   }
 
   .menu-content {

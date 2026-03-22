@@ -53,10 +53,13 @@ class LanguageManager {
         // Update document lang
         document.documentElement.lang = this.currentLang;
         
-        // Update toggle button text/flag
+        // Update toggle button text/flag and tooltip
         if (this.langText) {
             this.langText.textContent = this.currentLang === 'es' ? 'EN' : 'ES';
-            // Alternativamente puedes usar emojis: currentLang === 'es' ? '🇺🇸' : '🇲🇽'
+        }
+        if (this.langToggleBtn) {
+            const tooltipText = this.currentLang === 'es' ? 'Clic para cambiar a Inglés' : 'Click to change to Spanish';
+            this.langToggleBtn.setAttribute('data-tooltip', tooltipText);
         }
 
         // 1. Update all elements with .trn tracking data-es and data-en
