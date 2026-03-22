@@ -63,7 +63,7 @@
                         <svg class="social-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <path
                                 d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
-                            <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="currentColor" />
+                            <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="var(--bg, #000)" />
                         </svg>
                     </a>
                 </li>
@@ -241,7 +241,7 @@
                                 fill="currentColor">
                                 <path
                                     d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
-                                <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="currentColor" />
+                                <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="var(--bg, #000)" />
                             </svg>
                         </a>
                     </li>
@@ -321,8 +321,8 @@
                                     aria-label="Video Marketing" class="services-link">
                                     <svg class="services-icon" width="20" height="20" viewBox="0 0 24 24"
                                         fill="currentColor">
-                                        <path d="M4 4h16v16H4V4z" />
-                                        <polygon points="10,8 16,12 10,16" fill="currentColor" />
+                                        <!-- Video Camera -->
+                                        <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" />
                                     </svg>
                                     Video Marketing
                                 </a>
@@ -332,8 +332,8 @@
                                     aria-label="Activities" class="services-link">
                                     <svg class="services-icon" width="20" height="20" viewBox="0 0 24 24"
                                         fill="currentColor">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
-                                        <path d="M8 12l8-8" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                        <!-- Sailing/Activity -->
+                                        <path d="M3 13.5v2.85l1.63.65c.67.27 1.39.27 2.06 0l1.9-1.03c.67-.36 1.48-.36 2.15 0l1.9 1.03c.67.36 1.48.36 2.15 0l1.63-.65V13.5zM12 2L6 12h12z" />
                                     </svg>
                                     Activities
                                 </a>
@@ -343,10 +343,8 @@
                                     aria-label="Transportation" class="services-link">
                                     <svg class="services-icon" width="20" height="20" viewBox="0 0 24 24"
                                         fill="currentColor">
-                                        <path
-                                            d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99z" />
-                                        <circle cx="7.5" cy="16.5" r="1.5" />
-                                        <circle cx="16.5" cy="16.5" r="1.5" />
+                                        <!-- Van/Shuttle -->
+                                        <path d="M17 5H3c-1.1 0-2 .89-2 2v9h2c0 1.65 1.34 3 3 3s3-1.35 3-3h5.5c0 1.65 1.34 3 3 3s3-1.35 3-3H23v-5l-6-6zM3 11V7h4v4H3zm13.5.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
                                     </svg>
                                     Transportation
                                 </a>
@@ -356,8 +354,8 @@
                                     class="services-link non-clickable">
                                     <svg class="services-icon" width="20" height="20" viewBox="0 0 24 24"
                                         fill="currentColor">
-                                        <path
-                                            d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" />
+                                        <!-- Helicopter -->
+                                        <path d="M19.5 9.5c-1 0-1.84.45-2.38 1.13L15 10V8h3.5V6H13V3.5h2V2H9v1.5h2V6H4.5v2H8v2L5.88 10.63C5.34 9.95 4.5 9.5 3.5 9.5c-1.93 0-3.5 1.57-3.5 3.5h2c0-.83.67-1.5 1.5-1.5.76 0 1.39.57 1.48 1.31l1.52.56V16h4v1.5h2V16h4v-2.63l1.52-.56c.09-.74.72-1.31 1.48-1.31.83 0 1.5.67 1.5 1.5h2c0-1.93-1.57-3.5-3.5-3.5zM11 12H9v-2h2v2zm3 0h-2v-2h2v2z" />
                                     </svg>
                                     Helicopter Ride
                                 </button>
@@ -367,11 +365,8 @@
                                     rel="noopener" aria-label="Bachelor & Bachelorette Parties" class="services-link">
                                     <svg class="services-icon" width="20" height="20" viewBox="0 0 24 24"
                                         fill="currentColor">
-                                        <path
-                                            d="M18 6l-1.41 1.41-.58-.58 1.99-1.99L15 2l3 3-1.59 1.59.58.58-1.99 1.99L18 6z" />
-                                        <circle cx="8" cy="18" r="2" />
-                                        <circle cx="16" cy="8" r="2" />
-                                        <path d="M7 7h10v2H7V7z" />
+                                        <!-- Cake / Party -->
+                                        <path d="M12 6a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2zm6 3h-5V7h-2v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V11c0-1.1-.9-2-2-2z" />
                                     </svg>
                                     Bachelor & Bachelorette Parties
                                 </a>
